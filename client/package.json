@@ -1,0 +1,36 @@
+{
+    "name": "js-replica",
+    "version": "0.1.0",
+    "main": "build/index.js",
+    "license": "MIT",
+    "bin": "build/index.js",
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc --watch",
+        "start": "node build/index.js"
+    },
+    "dependencies": {
+        "@iarna/toml": "^2.2.5",
+        "@types/node": "^16.7.1",
+        "crypto-js": "^4.1.1",
+        "deep-extend": "^0.6.0",
+        "dotenv": "^8.2.0",
+        "eth-crypto": "^2.1.0",
+        "filecoin.js": "^0.0.5-alpha",
+        "noble-secp256k1": "^1.2.14",
+        "tabtab": "^3.0.2",
+        "ts-node": "^10.2.1",
+        "uuid": "^8.3.2",
+        "web3.storage": "^3.3.2",
+        "js-base64": "^3.7.2"
+    },
+    "devDependencies": {
+        "@types/crypto-js": "^4.1.1",
+        "@types/deep-extend": "^0.4.31",
+        "@types/node": "^16.7.1",
+        "@types/node-fetch": "^2.5.7",
+        "@types/tabtab": "^3.0.1",
+        "@types/uuid": "^8.3.4",
+        "typescript": "^4.0.2"
+    }
+}
