@@ -1,7 +1,7 @@
 # replica-fvm
 Linked data built on FVM actors
 
-An experiment in writing a Filecoin Virtual Machine smart contract using Rust. Create a custom actor for private fileDrive (aka. smart contract) that stores the state in your local devnet Lotus node's blockstore.
+An experiment in writing a Filecoin Virtual Machine smart contract using Rust. Create a custom actor for fileDrive that stores the state in local Lotus. Later it should be linked data with on-chain relations, building blocks for data DAOs.
 
 For more info on the FVM:
 
@@ -32,9 +32,11 @@ For more info on the FVM:
 
 ## Dynamic Data
 
-Explore the possibilities of FVM personal database, generalized to social graphs, thread comment, folder system and more. The fundamental is to define on-chain data structures of immutable stream identitiy and append-only versioned commits. 
+Explore possibilities of FVM relational database, that generalizes to social graphs, thread comment, folder system and more. The fundamental is to define on-chain `stream` with immutable identity and append-only, versioned `commits`. 
 
 ```   
-{StreamCID, owner, permissions} -> {CommitCID_1, CommitCID_2, ...}
+{streamID, owner, permissions} -> {commitID_1, commitID_2, ...}
 ```
+
+This can be a supplement for backup of Ceramic network. Users can aggregate 24h of Ceramic streams (offchain), bundle it as a new FVM commit (on-chain).
 
